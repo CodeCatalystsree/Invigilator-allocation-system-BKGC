@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invigilation Duty Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-600 text-white p-10">
+
+    <h2 class="text-3xl font-bold text-center mb-6">Invigilation Duty Allocation</h2>
+
+    <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse border border-gray-700">
+            <thead>
+                <tr class="bg-gray-700">
+                    <th class="p-3 border border-gray-600">Exam Date</th>
+                    <th class="p-3 border border-gray-600">Time Slot</th>
+                    <th class="p-3 border border-gray-600">Stream</th>
+                    <th class="p-3 border border-gray-600">Faculty Name</th>
+                    <th class="p-3 border border-gray-600">Exam Hall</th>
+                    <th class="p-3 border border-gray-600">Total Duties</th>
+                    <th class="p-3 border border-gray-600">PA/PD Count</th>
+                </tr>
+            </thead>
+            <tbody id="dutyTable" class="bg-gray-800">
+                <!-- Data will be injected here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        fetch('fetch_duties.php')
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.getElementById('dutyTable');
+                tableBody.innerHTML = data.map(duty => `
+                    <tr class="border border-gray-600">
+                        <td class="p-3 border border-gray-600">${duty.exam_date}</td>
+                        <td class="p-3 border border-gray-600">${duty.time_slot}</td>
+                        <td class="p-3 border border-gray-600">${duty.stream}</td>
+                        <td class="p-3 border border-gray-600">${duty.faculty_name}</td>
+                        <td class="p-3 border border-gray-600">${duty.exam_hall}</td>
+                        <td class="p-3 border border-gray-600">${duty.total_duties}</td>
+                        <td class="p-3 border border-gray-600">${duty.pa_pd}</td>
+                    </tr>
+                `).join('');
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
+
+</body>
+</html>
