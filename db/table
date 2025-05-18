@@ -1,0 +1,122 @@
+CREATE TABLE teachers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL
+);
+
+
+INSERT INTO teachers (username, password) VALUES ('Ananya Chatterjee', 'An@987ac');
+INSERT INTO teachers (username, password) VALUES ('Debopriya Banerjee', 'Deb#1234');
+INSERT INTO teachers (username, password) VALUES ('Sourav Dasgupta', 'Sour@456');
+INSERT INTO teachers (username, password) VALUES ('Rituparna Sen', 'Rit!2024');
+INSERT INTO teachers (username, password) VALUES ('Abhisek Roy', 'Abh$7890');
+INSERT INTO teachers (username, password) VALUES ('Saira Begum', 'Sai#3210');
+INSERT INTO teachers (username, password) VALUES ('Tiyasha Mallick', 'Tiy@404');
+INSERT INTO teachers (username, password) VALUES ('Subham Biswas', 'Subh@1010');
+INSERT INTO teachers (username, password) VALUES ('Nandini Dutta', 'Nan@998');
+INSERT INTO teachers (username, password) VALUES ('Debjit Pal', 'Deb!4567');
+INSERT INTO teachers (username, password) VALUES ('Oindrila Mitra', 'Oin$222');
+INSERT INTO teachers (username, password) VALUES ('Bibhas Basu', 'Bib@2233');
+INSERT INTO teachers (username, password) VALUES ('Sanjana Ganguly', 'San#667');
+INSERT INTO teachers (username, password) VALUES ('Indranil Mukherjee', 'Ind@989');
+INSERT INTO teachers (username, password) VALUES ('Chandrima Sarkar', 'Chan@4001');
+INSERT INTO teachers (username, password) VALUES ('Arnab Das', 'Arn#5555');
+INSERT INTO teachers (username, password) VALUES ('Tithi Chatterjee', 'Tit@323');
+INSERT INTO teachers (username, password) VALUES ('Mohammed Ali', 'Moha$891');
+INSERT INTO teachers (username, password) VALUES ('Ayon Mondal', 'Ayo@1092');
+INSERT INTO teachers (username, password) VALUES ('Rupsha Banerjee', 'Rup#3030');
+INSERT INTO teachers (username, password) VALUES ('Subhajit Mazumdar', 'Subh@Ma45');
+INSERT INTO teachers (username, password) VALUES ('Moumita Halder', 'Mou@8888');
+INSERT INTO teachers (username, password) VALUES ('Debmalya Sen Gupta', 'Debm@1998');
+INSERT INTO teachers (username, password) VALUES ('Antara Roy Chowdhury', 'Ant@1231');
+INSERT INTO teachers (username, password) VALUES ('Sujoy Ghosh', 'Suj@4321');
+INSERT INTO teachers (username, password) VALUES ('Payel Sikdar', 'Pay$5690');
+INSERT INTO teachers (username, password) VALUES ('Souvik Nandi', 'Sou#2025');
+INSERT INTO teachers (username, password) VALUES ('Trisha Baidya', 'Tri@2903');
+INSERT INTO teachers (username, password) VALUES ('Gourab Karmakar', 'Gou@8811');
+INSERT INTO teachers (username, password) VALUES ('Srabani Chakraborty', 'Sra#785');
+INSERT INTO teachers (username, password) VALUES ('Arijit Burman', 'Ari@1239');
+INSERT INTO teachers (username, password) VALUES ('Poushali Adhikari', 'Pou@9090');
+INSERT INTO teachers (username, password) VALUES ('Rajdeep Kundu', 'Raj@K456');
+INSERT INTO teachers (username, password) VALUES ('Sreetama Barman', 'Sree$789');
+INSERT INTO teachers (username, password) VALUES ('Kunal Goswami', 'Kun@001');
+INSERT INTO teachers (username, password) VALUES ('Ankita Debnath', 'Ank@2022');
+INSERT INTO teachers (username, password) VALUES ('Joydeep Nath', 'Joy@1500');
+INSERT INTO teachers (username, password) VALUES ('Tanusree Mallick', 'Tanu@880');
+INSERT INTO teachers (username, password) VALUES ('Subrata Biswas', 'Sub@Bi999');
+INSERT INTO teachers (username, password) VALUES ('Ayesha Khan', 'Aye@432');
+INSERT INTO teachers (username, password) VALUES ('Nayana Dutta', 'Nay@321');
+INSERT INTO teachers (username, password) VALUES ('Debashish Pal', 'Deb@Pal10');
+INSERT INTO teachers (username, password) VALUES ('Ishani Mitra', 'Isha@858');
+INSERT INTO teachers (username, password) VALUES ('Biplab Basu', 'Bip@100');
+INSERT INTO teachers (username, password) VALUES ('Sayantani Ganguly', 'Say@2020');
+INSERT INTO teachers (username, password) VALUES ('Indrajit Mukherjee', 'Indra@123');
+INSERT INTO teachers (username, password) VALUES ('Shreya Bhattacharya', 'Shr@000');
+INSERT INTO teachers (username, password) VALUES ('Rohan Chowdhury', 'Roh@1101');
+INSERT INTO teachers (username, password) VALUES ('Priyanka Majumdar', 'Pri@558');
+INSERT INTO teachers (username, password) VALUES ('Arindam Sarkar', 'AriS@902');
+
+INSERT INTO teachers (name, password) VALUES ('Soma Das', 'RjKLt47xRX');
+INSERT INTO teachers (name, password) VALUES ('Sudipta Chowdhury', 'n2XtEG5rgC');
+INSERT INTO teachers (name, password) VALUES ('Suchismita Roy', 'n4OeExETZq');
+INSERT INTO teachers (name, password) VALUES ('Kajal Das', 'VhKpyRZJWZ');
+INSERT INTO teachers (name, password) VALUES ('Bipasha Nandi', 'A9S8VCx7Pa');
+INSERT INTO teachers (name, password) VALUES ('Anindita Mitra', 'QX8qCAtJ#z');
+INSERT INTO teachers (name, password) VALUES ('Papiya Kar', '9HhJX3keAz');
+INSERT INTO teachers (name, password) VALUES ('Debashree Paul', 'VAHChNLePf');
+INSERT INTO teachers (name, password) VALUES ('Soma Banerjee', 'WTyo3#P0u0');
+INSERT INTO teachers (name, password) VALUES ('Rina Ghosh', 'hXdvNi6VGH');
+INSERT INTO teachers (name, password) VALUES ('Tina Halder', 'IgUlOJED8d');
+INSERT INTO teachers (username, password) VALUES ('Satarupa Ghosh', '8TnHRlu0sE');
+INSERT INTO teachers (username, password) VALUES ('Nabanita Paul', 'Rx1fArMu9u');
+INSERT INTO teachers (username, password) VALUES ('Tanusree Das', 'A#0nhAnUh1');
+INSERT INTO teachers (username, password) VALUES ('Debjani Roy', 'uQ7rNO@2M6');
+INSERT INTO teachers (username, password) VALUES ('Sumita Dutta', 'MJuMiK@XvP');
+INSERT INTO teachers (username, password) VALUES ('Ankita Dutta', 'XOTwG8ZzF2');
+INSERT INTO teachers (username, password) VALUES ('Rupsha Das', '3R3NhgL1P@');
+INSERT INTO teachers (username, password) VALUES ('Minati Ghosh', '91nUsMF3Cy');
+INSERT INTO teachers (username, password) VALUES ('Madhabi Mondal', '8Zp8OphszN');
+INSERT INTO teachers (username, password) VALUES ('Arpita Bera', 'KZ2GnYIoTr');
+INSERT INTO teachers (username, password) VALUES ('Jhuma Chakraborty', 'z2ERjtrMlo');
+INSERT INTO teachers (username, password) VALUES ('Shilpi Dutta', 'W28Yvq#X4K');
+INSERT INTO teachers (username, password) VALUES ('Moumita Halder', '1ehV54KhYT');
+INSERT INTO teachers (username, password) VALUES ('Lipika Bhattacharjee', 'Fb4yfr@Zml');
+INSERT INTO teachers (username, password) VALUES ('Aditi Chatterjee', 'UzVUPB0Cy6');
+INSERT INTO teachers (username, password) VALUES ('Priyanka Majumdar', 'N6glJZaKQe');
+INSERT INTO teachers (username, password) VALUES ('Paramita Das', 'Yuk4uwKO9C');
+INSERT INTO teachers (username, password) VALUES ('Shampa Banerjee', '3gLfX#EG2D');
+INSERT INTO teachers (username, password) VALUES ('Bhaswati Ghosh', 'vOwZgk@FiR');
+INSERT INTO teachers (username, password) VALUES ('Debasree Dey', 'HOn7LPtDVi');
+INSERT INTO teachers (username, password) VALUES ('Anuradha Roy', 'fM9EWDvkWx');
+INSERT INTO teachers (username, password) VALUES ('Ipsita Saha', 'pFvWH9KTZM');
+INSERT INTO teachers (username, password) VALUES ('Piyali Mukherjee', 'OASLURO30J');
+INSERT INTO teachers (username, password) VALUES ('Aparna Bhattacharya', 'QIOa0zI6@G');
+INSERT INTO teachers (username, password) VALUES ('Krishna Sinha', 'qP2c1hDH9H');
+INSERT INTO teachers (username, password) VALUES ('Namita Das', '7MFZPU@ePj');
+INSERT INTO teachers (username, password) VALUES ('Sayantani Roy', 'nZai7Jz49g');
+INSERT INTO teachers (username, password) VALUES ('Chandreyee Das', 'qSw8#glp8f');
+INSERT INTO teachers (username, password) VALUES ('Nabanita Ghosh', 'VkEbRy@a1R');
+INSERT INTO teachers (username, password) VALUES ('Subhra Paul', 'JMoLgNSWf3');
+INSERT INTO teachers (username, password) VALUES ('Sutapa Banerjee', 'z4lAKwnGpY');
+INSERT INTO teachers (username, password) VALUES ('Indrani Ghosh', 'blGEHTw8KC');
+INSERT INTO teachers (username, password) VALUES ('Rituparna Halder', 'GRyEF9kMLB');
+INSERT INTO teachers (username, password) VALUES ('Rekha Das', 'h1MG#9YT07');
+INSERT INTO teachers (username, password) VALUES ('Jayita Roy', 'e6I0K5l9@f');
+INSERT INTO teachers (username, password) VALUES ('Antara Ghosh', '5EdV6RU#JZ');
+INSERT INTO teachers (username, password) VALUES ('Doyel Ghosh', 'oSBY38qSh9');
+INSERT INTO teachers (username, password) VALUES ('Shampa Halder', 'kA@Z3RUuqJ');
+INSERT INTO teachers (username, password) VALUES ('Madhumita Ghosh', '87rUY3VqSb');
+INSERT INTO teachers (username, password) VALUES
+('arunava.burman', 'G7n!3xFa'),
+('shatabdi.chakraborty', 'Xp9@aQz2'),
+('gopal.karmakar', 'Lk#5mVp9'),
+('omar.faruq', 'W8r$zDq7'),
+('taslima.nasrin', 'Ht2@uBn4'),
+('kamal.uddin', 'Qa3#zLn8'),
+('sabina.yasmin', 'Vt6^nWp1'),
+('javed.akhtar', 'Mf9*eKt3'),
+('nusrat.jahan', 'Jr2&xVb7'),
+('rehan.sheikh', 'Pe5@lWq4'),
+('farida.khatun', 'Tg8!sMn2'),
+('sayantan.nandi', 'Zh4^aRp6'),
+('purbasha.sikdar', 'Yx7@oBn9');
