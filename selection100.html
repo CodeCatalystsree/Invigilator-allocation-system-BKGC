@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Selection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center items-center h-screen bg-gradient-to-br from-zinc-900 via-slate-700 to-indigo-950 relative">
+    ">
+
+    <!--  Background -->
+    <div class="absolute inset-0 backdrop-blur-xl"></div>
+
+    <!-- Outer Transparent Box -->
+    <div class="relative bg-gray-800/70 backdrop-blur-lg p-10 rounded-2xl shadow-2xl border border-white w-96">
+
+        <!-- Form Box -->
+        <h2 class="text-white text-2xl font-bold mb-4 text-center">Schedule Selection</h2>
+
+        <form method="POST" action="{{ url_for('selection') }}">
+            
+            <!-- Semester Selection -->
+            <label class="block text-white font-medium">Semester</label>
+            <select name="semester" id="semester" class="w-full p-3 mt-1 rounded-lg bg-white/20 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-white placeholder-gray-200">
+                <option value="sem1">Sem 1</option>
+                <option value="sem2">Sem 2</option>
+                <option value="sem3">Sem 3</option>
+                <option value="sem4">Sem 4</option>
+                <option value="sem5">Sem 5</option>
+                <option value="sem6">Sem 6</option>
+                <option value="sem7">Sem 7</option>
+                <option value="sem8">Sem 8</option>
+            </select>
+
+            <!-- Month Selection -->
+            <label class="block text-white font-medium mt-3">Month</label>
+            <select name="month" id="month" class="w-full p-3 mt-1 rounded-lg bg-white/20 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-white placeholder-gray-200">
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="Jun">Jun</option>
+                <option value="Jul">Jul</option>
+                <option value="Aug">Aug</option>
+                <option value="Sep">Sep</option>
+                <option value="Oct">Oct</option>
+                <option value="Nov">Nov</option>
+                <option value="Dec">Dec</option>
+            </select>
+
+            <!-- Exam Date -->
+            <label class="block text-white font-medium mt-3">Exam Date</label>
+            <input type="date" name="exam_date" id="exam" class="w-full p-3 mt-1 rounded-lg bg-white/20 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-white placeholder-gray-200">
+
+            <!-- Time Slot Selection 
+            <label class="block text-white font-medium mt-3">Time Slot</label>
+            <select name="slot" id="slot" class="w-full p-3 mt-1 rounded-lg bg-white/20 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-white placeholder-gray-200">
+                <option value="10am-1pm">10 am to 1 pm</option>
+                <option value="2pm-5pm">2 pm to 5 pm</option>
+            </select>-->
+
+            <!-- Buttons -->
+            <div class="mt-4 flex justify-between">
+                <button type="submit" class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Submit</button>
+                <button type="reset" class="bg-gray-400 text-white px-5 py-2 rounded-lg hover:bg-gray-600 transition">Reset</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invigilator Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center items-center h-screen bg-gradient-to-br from-zinc-900 via-slate-700 to-indigo-950 relative">
+
+    <!--  Background -->
+    <div class="absolute inset-0 bg-black/30  backdrop-blur-lg"></div>
+
+    <!-- Outer Transparent Box -->
+    <div class="relative bg-gray-800/70 backdrop-blur-lg p-10 rounded-2xl shadow-2xl border border-white w-96">
+        
+        <!-- Form Box -->
+        <div >
+            <h2 class="text-white text-2xl font-bold mb-4 text-center">Login</h2>
+
+            <form name="f1" method="post" action="{{ url_for('login') }}">
+                <label class="block text-white font-medium">Username</label>
+                <input type="text" name="username" class="w-full p-3 mt-1 rounded-lg bg-white/20 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-white placeholder-gray-200" placeholder="Enter your username">
+
+                <label class="block text-white font-medium mt-3">Password</label>
+                <input type="password" name="password" class="w-full p-3 mt-1 rounded-lg bg-white/20 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-white placeholder-gray-200" placeholder="Enter your password">
+
+                <div class="mt-4 flex justify-between">
+                    <button type="submit" class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Submit</button>
+                    <button type="reset" class="bg-gray-400 text-white px-5 py-2 rounded-lg hover:bg-gray-600 transition">Reset</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
